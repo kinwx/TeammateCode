@@ -1,0 +1,14 @@
+:root {
+    --clr-lighter: #f6f6f6;
+    --clr-dark: #2b2730;
+    --clr-vintage: #ffb84c;
+
+    /* Negrito */
+    --text-bold: 700;
+
+    /* Padrão */
+    --text-medium: 500;
+
+    /* Fina */
+    --text-regular: 400;
+}
