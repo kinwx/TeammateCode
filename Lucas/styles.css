@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bodysec{
+    background-color: #2B2730;
+  
+}
+
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff;  
+    margin: 0px 220px; 
+    display: flex;
+
+}
+
+.container h1{
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff; 
+    margin-bottom: 20px;
+}
+.container h1 .highlight {
+    color: #FFB84C;  /
+}
+
+
+.section{
+    padding: 50px;
+    text-align: center;
+}
+
+.profiles{
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 150px;
+}
+.profile img{
+    width: 250px;
+    height: 350px;
+    border-radius: 30px;
+       
+}
+
+.text h2 {
+    color: #FFB84C;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    
+}
