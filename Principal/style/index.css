@@ -123,10 +123,135 @@ ul {
     margin-top: 50px;
 }
 
+/* CSS by Lucas */
+.bodysec{
+    background-color: #2B2730;
+    
+  
+}
+
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff;  
+    margin: 0px 320px; 
+    display: flex;
+    
+}
+
+.container h1{
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff; 
+    margin-bottom: 60px;
+}
+.container h1 .highlight {
+    color: #FFB84C;  /
+}
+
+.photos{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+.photo{
+    margin: 0 10px;
+    position: relative;  
+}
+
+.username {
+    color: #f6f6f6; 
+    background-color: #f6f6f641;
+    padding: 6px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.photo img{
+    width: 392px;
+    height: 522px;
+    border-radius: 32px;
+    display: flex;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+       
+}
+
+.photo img:hover {
+    transform: scale(1.05); 
+}
+
+.stats{
+    display: flex;
+    margin: 70px 310px;
+    
+}
+
+.stat-h2{
+    margin-right: 100px;
+    text-align: center;
+    color: #FFB84C;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+  
+}
+
+
+.stat-h2 p{
+    color: #fff;
+    margin-top: 5px;
+    font-size: 30px;
+    text-align: start;
+}
+
+.explore{
+    /* margin: 0 550px; */
+    color: #fff;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    margin-left: 260px;
+    margin-bottom: 15px;
+}
+
+.button-container{
+    position: absolute; 
+    bottom: 20px;
+    right: 320px; 
+    margin-top: 10px;
+    margin-bottom: 30px;
+   
+}
+
+.button {
+    background-color: #FFB84C;
+    color: #201A2A;
+    text-decoration: none;
+    border-radius: 50%;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+    padding: 20px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button:hover {
+    background-color: #e5921c;
+}
+
 /* CSS by Davi */
 .section-3 {
     width: 90%;
-    border: 1px solid black;
+    /* removeu borda */
     margin: 0 auto;
 
     display: flex;
