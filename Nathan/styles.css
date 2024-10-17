@@ -25,6 +25,7 @@ header {
     display: flex;
     align-items: center;
     gap: 20px;
+    cursor: pointer;
 }
 
 .btn {
@@ -36,17 +37,44 @@ header {
     font-size: 11px;
 }
 
+.foo-primary {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 70px;
+    gap: 90px;
+    margin-right: 10px;
+    margin-left: 2px;
+}
+
 .foo {
     display: flex;
     flex-direction: column;
     padding: 15px 70px;
-    gap: 80px;
-    
+    gap: 20px;
+    flex: 1;
 }
-.foo > img{
-    width: 70px;
+
+.foo-primary>img {
+    width: 100px;
+    margin-left: 0px;
 }
 
 .social {
-    width: 25px;
+    width: 20px;
+    margin-left: 10px;
+
+}
+
+.footer {
+    display: flex;
+    justify-content: right;
+    /* Espaço entre os itens */
+    align-items: flex-start;
+    /* Alinha os itens ao topo */
+    margin-right: 0 20px;
+    padding-right: 10px 50px;
+}
+
+ul {
+    list-style: none;
 }
