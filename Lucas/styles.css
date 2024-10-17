@@ -1,11 +1,20 @@
-*{
+/* Base */
+/* Fonte: Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Nossas variáveis */
+@import url('./variables.css');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
+
 
 .bodysec{
     background-color: #2B2730;
+    
   
 }
 
@@ -14,42 +23,110 @@
     font-size: 48px;
     font-weight: bold;
     color: #fff;  
-    margin: 0px 220px; 
+    margin: 0px 320px; 
     display: flex;
-
+    
 }
 
 .container h1{
     font-size: 48px;
     font-weight: bold;
     color: #fff; 
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 .container h1 .highlight {
     color: #FFB84C;  /
 }
 
-
-.section{
-    padding: 50px;
-    text-align: center;
-}
-
-.profiles{
+.photos{
     display: flex;
-    justify-content: space-around;
-    margin: 0px 150px;
+    justify-content: center;
+    margin-top: 20px;
+    position: relative;
 }
-.profile img{
-    width: 250px;
-    height: 350px;
-    border-radius: 30px;
+
+.photo{
+    margin: 0 10px;
+    position: relative;  
+}
+
+.username {
+    color: #f6f6f6; 
+    background-color: #f6f6f641;
+    padding: 6px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.photo img{
+    width: 392px;
+    height: 522px;
+    border-radius: 32px;
+    display: flex;
+    object-fit: cover;
        
 }
 
-.text h2 {
-    color: #FFB84C;
-    font-family: Arial, Helvetica, sans-serif;
+.stats{
     display: flex;
+    margin: 70px 310px;
     
+}
+
+.stat-h2{
+    margin-right: 100px;
+    text-align: center;
+    color: #FFB84C;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+  
+}
+
+
+.stat-h2 p{
+    color: #fff;
+    margin-top: 5px;
+    font-size: 30px;
+    text-align: start;
+}
+
+.explore{
+    /* margin: 0 550px; */
+    color: #fff;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    margin-left: 260px;
+    margin-bottom: 15px;
+}
+
+.button-container{
+    position: absolute; 
+    bottom: 20px;
+    right: 320px; 
+    margin-top: 10px;
+    margin-bottom: 30px;
+   
+}
+
+.button {
+    background-color: #FFB84C;
+    color: #201A2A;
+    text-decoration: none;
+    border-radius: 50%;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+    padding: 20px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button:hover {
+    background-color: #e5921c;
 }
