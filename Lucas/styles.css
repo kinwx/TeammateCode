@@ -67,7 +67,12 @@
     border-radius: 32px;
     display: flex;
     object-fit: cover;
+    transition: transform 0.3s ease;
        
+}
+
+.photo img:hover {
+    transform: scale(1.05); 
 }
 
 .stats{
