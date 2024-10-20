@@ -59,3 +59,40 @@
     filter: grayscale();
     margin-top: 50px;
 }
+
+/* conteudo do jefferson */
+.conteudo-engage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(43, 39, 48, 1);
+    color: white;
+    width: 1180px;
+    margin: 0 auto;
+    height: 400px;
+    border-radius: 45px; 
+    /* coloquei para afastar da 1 section */
+    margin-top: 30px;
+    
+}
+
+.conteudo-engage h1 {
+    font-size: 60px;
+    font-weight: var(--text-bold);
+}
+
+.conteudo-engage p {
+    margin-top: 15px;
+}
+
+.conteudo-engage button {
+    background-color: #FAB80C;
+    margin-top: 15px;
+    width: 180px;
+    height: 60px;
+    border-radius: 45px;
+    height: 65px;
+    font-size: 15px;
+    
+}
