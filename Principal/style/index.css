@@ -11,12 +11,30 @@
     font-family: "Poppins", sans-serif;
 }
 
+body {
+    overflow-x: hidden;
+}
+/* Davi - Controle de responsividade */
+main {
+    width: 1248px;
+    display: flex;
+    flex-direction: column;
+
+    /* espaçamento de uma section para outra */
+    gap: 3rem;
+
+    margin: 0 auto;
+}
+main > * {
+    flex: 1;
+}
+
 /* CSS by Nathan */
 header {
     display: flex;
     justify-content: space-between;
-    padding: 15px 70px;
-
+    /* padding: 15px 70px; Davi - ajustei só as medidas */ 
+    padding: 15px 0;
 }
 
 .cabeca {
@@ -82,20 +100,18 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 0 120px;
-    width: 1420px;
-    margin: 0 auto;
+    /* padding: 0 120px; Davi - Desativei pra responsividade */
+    width: 100%;
+    /* margin: 0 auto; Davi - Dasativei para a responsividade  */
 }
 
 .img-circle img{
-    width: 145px;
+    width: 145px; 
 }
 
 .img-circle {
     display: flex;
-    justify-content: right;
-    
-    
+    justify-content: right; 
 }
 
 .conteudo-learn h1{
@@ -116,7 +132,11 @@ ul {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    height: 675px;
+    /* height: 675px; Davi - Mudei para as próximas 3 propriedades */
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    width: 100%;
+
     border: 15px solid var(--clr-dark);
     border-radius: 45px;
     filter: grayscale();
@@ -125,19 +145,17 @@ ul {
 
 /* CSS by Lucas */
 .bodysec{
-    background-color: #2B2730;
-    
-  
+    /* background-color: #2B2730; */
+    background-color: var(--clr-dark); /* Davi - Troquei a cor pela variável */
 }
 
 .container {
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; Davi - Desativei pra ficar com a fonte principal */
     font-size: 48px;
     font-weight: bold;
     color: #fff;  
-    margin: 0px 320px; 
-    display: flex;
-    
+    /* margin: 0px 320px; Davi - Desativei a margem para se caso a gente for fazer responsividade, ficar mais fácil  */ 
+    display: flex; /* Davi - Dava pra tirar essa linha se quisesse, não ia quebrar */
 }
 
 .container h1{
@@ -147,12 +165,13 @@ ul {
     margin-bottom: 60px;
 }
 .container h1 .highlight {
-    color: #FFB84C;  /
+    color: #FFB84C;  
 }
 
 .photos{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; Davi - Troquei para esse */
+    justify-content: space-between;
     margin-top: 20px;
     position: relative;
 }
@@ -160,6 +179,7 @@ ul {
 .photo{
     margin: 0 10px;
     position: relative;  
+    flex: 1; /* Davi - adicionei essa propriedade para conter a largura das imagens */
 }
 
 .username {
@@ -170,12 +190,16 @@ ul {
     position: absolute;
     bottom: 30px;
     left: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; Davi - Desativei para ficar com a fonte principal */
 }
 
 .photo img{
-    width: 392px;
-    height: 522px;
+    /* width: 392px; Davi - Troquei desse (1/2) */
+    /* height: 522px; Davi - Troquei desse (2/2) */
+    /* Para os próx */
+    aspect-ratio: 9/16;
+    width: 100%;
+
     border-radius: 32px;
     display: flex;
     object-fit: cover;
@@ -189,8 +213,10 @@ ul {
 
 .stats{
     display: flex;
-    margin: 70px 310px;
-    
+    justify-content: flex-start;
+    /* margin: 70px 310px; */
+    margin: 70px 0; /* Só concertei a margin */
+    position: relative; /* Davi - Adicionei essa propriedade pra gente não perder de vista o butão */
 }
 
 .stat-h2{
@@ -200,7 +226,6 @@ ul {
     font-size: 40px;
     display: flex;
     flex-direction: column;
-  
 }
 
 
@@ -208,7 +233,7 @@ ul {
     color: #fff;
     margin-top: 5px;
     font-size: 30px;
-    text-align: start;
+    text-align: start; /* Massa */
 }
 
 .explore{
@@ -218,17 +243,24 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;    
-    margin-left: 260px;
+    /* margin-left: 260px; Davi - troquei esse por... */
+    align-self: last baseline; /* esse. */
     margin-bottom: 15px;
+    /* Davi - adicionei as prox propriedade */
+    position: absolute;
+    right: 7rem;
 }
 
 .button-container{
     position: absolute; 
-    bottom: 20px;
-    right: 320px; 
+    /* bottom: 20px; Davi - Troquei para o prox */
+    bottom: 0;
+
+    /* right: 320px; Davi - Troquei para o próx */
+    right: 1.5rem;
+
     margin-top: 10px;
     margin-bottom: 30px;
-   
 }
 
 .button {
@@ -250,9 +282,10 @@ ul {
 
 /* CSS by Davi */
 .section-3 {
-    width: 90%;
+    /* width: 90%; Davi - Desativei para responsividade */
     /* removeu borda */
     margin: 0 auto;
+    padding: 2.5rem 0;
 
     display: flex;
     gap: 1rem;
@@ -300,4 +333,17 @@ ul {
     aspect-ratio: 1/1;
     object-fit: cover;
     width: 10rem;
+}
+
+/* Novos */
+/* Adicionando backgroud dark atras das imagens  */
+.bodysec::before {
+    position: absolute;
+    content: "";
+    top: 48rem;
+    left: 0;
+    background-color: var(--clr-dark);
+    height: 1660px;
+    width: 100vw;
+    z-index: -1;
 }
