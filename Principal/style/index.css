@@ -120,11 +120,11 @@ ul {
      font-size: 60px;
      font-weight: var(--text-bold);
      width: 60%;
-     color: rgba(43, 39, 48, 1);   
+     color: var(--clr-dark);   
 }
 
 .conteudo-learn p span {
-    color: rgba(255, 187, 0, 0.945);
+    color: var(--clr-vintage);
 }
 
 .imagem-hero{
@@ -149,8 +149,8 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(43, 39, 48, 1);
-    color: white;
+    background-color: var(--clr-dark);
+    color: var(--clr-lighter);
     /* width: 1180px; Davi - Desativei pra gente trabalhar melhor com a responsividade */
     /* margin: 0 auto; Davi - Desativei pra responsividade */
     height: 400px;
@@ -170,7 +170,10 @@ ul {
 }
 
 .conteudo-engage button {
-    background-color: #FAB80C;
+    background-color: var(--clr-vintage);
+    color: var(--clr-dark); /* Davi - mudei a cor da letra do botão */
+    border: none; /* Davi - removi borda do butão */
+    cursor: pointer; /* Davi - cursor de mãozinha quando pausar o mouse */
     margin-top: 15px;
     width: 180px;
     height: 60px;
@@ -189,7 +192,7 @@ ul {
     /* font-family: Arial, Helvetica, sans-serif; Davi - Desativei pra ficar com a fonte principal */
     font-size: 48px;
     font-weight: bold;
-    color: #fff;  
+    color: var(--clr-lighter);  
     /* margin: 0px 320px; Davi - Desativei a margem para se caso a gente for fazer responsividade, ficar mais fácil  */ 
     display: flex; /* Davi - Dava pra tirar essa linha se quisesse, não ia quebrar */
 }
@@ -197,11 +200,11 @@ ul {
 .container h1{
     font-size: 48px;
     font-weight: bold;
-    color: #fff; 
+    color: var(--clr-lighter); 
     margin-bottom: 60px;
 }
 .container h1 .highlight {
-    color: #FFB84C;  
+    color: var(--clr-vintage);  
 }
 
 .photos{
@@ -219,7 +222,7 @@ ul {
 }
 
 .username {
-    color: #f6f6f6; 
+    color: var(--clr-lighter); 
     background-color: #f6f6f641;
     padding: 6px;
     border-radius: 5px;
@@ -258,7 +261,7 @@ ul {
 .stat-h2{
     margin-right: 100px;
     text-align: center;
-    color: #FFB84C;
+    color: var(--clr-vintage);
     font-size: 40px;
     display: flex;
     flex-direction: column;
@@ -266,7 +269,7 @@ ul {
 
 
 .stat-h2 p{
-    color: #fff;
+    color: var(--clr-lighter);
     margin-top: 5px;
     font-size: 30px;
     text-align: start; /* Massa */
@@ -274,7 +277,7 @@ ul {
 
 .explore{
     /* margin: 0 550px; */
-    color: #fff;
+    color: var(--clr-lighter);
     font-size: 25px;
     display: flex;
     justify-content: center;
@@ -300,8 +303,8 @@ ul {
 }
 
 .button {
-    background-color: #FFB84C;
-    color: #201A2A;
+    background-color: var(--clr-vintage);
+    color: var(--clr-dark);
     text-decoration: none;
     border-radius: 50%;
     font-size: 1.2em;
