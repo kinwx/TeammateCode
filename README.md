@@ -2,7 +2,7 @@
 
 Nosso professor decidiu que iriamos fazer nosso primeiro trabalho em grupo. Disso, as esquipes foram sorteadas, e seus templates devidamente separados.
 
-## Time 5 - Template 5
+## Time 4 - Template 4
 Nosso trabalho foi uma landing page feita em grupo. Cada um fazendo sua parte, e no final juntando tudo. O time 5 era formado por:
 
 - Nathan Ramos
